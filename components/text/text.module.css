@@ -1,0 +1,4 @@
+.text{
+    font-size: inherit;
+    color: var(--c-text-color);
+}

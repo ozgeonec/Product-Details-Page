@@ -1,0 +1,22 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 45px;
+    border-bottom: 1px;
+    border-color: var(--c-navbar-color);
+    border-style: solid;
+}
+.pilot{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    color: var(--c-primary);
+    column-gap: 30px;
+    position: absolute;
+    right:100px;
+}

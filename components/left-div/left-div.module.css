@@ -1,0 +1,16 @@
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: calc(2vmin + 20px);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.vector{
+    font-size: 30px;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: calc(2vmin + 20px);
+}

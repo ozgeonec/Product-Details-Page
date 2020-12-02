@@ -1,0 +1,5 @@
+.header{
+    font-size: 30px;
+    color:var(--c-header-color);
+    font-weight: bold;
+}

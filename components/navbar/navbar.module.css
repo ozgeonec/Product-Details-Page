@@ -20,3 +20,18 @@
     position: absolute;
     right:100px;
 }
+.notify{
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    height: 17px;
+    background-color: var(--c-price-color);
+    color: var(--c-primary);
+    font-size: 11px;
+    border: 1px solid var(--c-text-color);
+}

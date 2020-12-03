@@ -5,11 +5,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: var(--c-primary);
+    background-color: transparent;
     height: 45px;
-    /*border-bottom: 1px;*/
-    /*border-color: var(--c-navbar-color);*/
-    /*border-style: solid;*/
+    border-bottom: 1px;
+    border-color: var(--c-navbar-color);
+    border-style: solid;
 }
 .pilot{
     display: flex;
@@ -34,4 +34,24 @@
     color: var(--c-primary);
     font-size: 11px;
     border: 1px solid var(--c-text-color);
+}
+.small{
+    display: flex;
+    flex-direction: row;
+}
+.small p{
+    font-weight: bold;
+}
+.img{
+    width: 50px;
+    height: auto;
+}
+.smallButton{
+    background-color: var(--c-button-color);
+    color: var(--c-primary);
+    outline: none;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
 }

@@ -20,8 +20,8 @@
 }
 .buttons{
     position: absolute;
-    right: 200px;
-    top:170px;
+    right: 380px;
+    top:200px;
     display: flex;
     flex-direction: row;
     gap: calc(2vmin + 20px);

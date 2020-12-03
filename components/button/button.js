@@ -3,7 +3,7 @@ import styles from './button.module.css'
 import cn from 'classnames'
 
 function Button({children, clicked, ...props}){
-    return <button className={cn(!clicked && styles.button, clicked && styles.clicked)}{...props}>
+    return <button className={cn(styles.button, clicked && styles.clicked)}{...props}>
         {children}
     </button>
 }

@@ -18,3 +18,11 @@
     gap: calc(5vmin + 20px);
 
 }
+.buttons{
+    position: absolute;
+    right: 200px;
+    top:170px;
+    display: flex;
+    flex-direction: row;
+    gap: calc(2vmin + 20px);
+}

@@ -1,17 +1,24 @@
-import React from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import styles from './navbar.module.css'
 import {Heart, ShoppingCart, User} from "../icons";
-import Button from "../button/button";
 import ButtonBasic from "../button/button-basic";
+import StoreContext from "../store/store";
 
-function NavBar({notify=1}){
-    return <div className={styles.navbar}>
+function NavBar({...props}){
+    const store = useContext(StoreContext)
+    const [notify, setNotify]=useState(0)
+
+    useEffect(()=>{
+        if (store.isClickedKey===false) return;
+        setNotify(notify+1)
+    },[store.isClickedKey])
+
+    return (<div className={styles.navbar}{...props}>
         <div className={styles.pilot}>
             <User/>
             <Heart/>
-            <ButtonBasic >{ <ShoppingCart/>}</ButtonBasic>
-            {notify > 0 && <span className={styles.notify}>{notify}</span>}
+            <ButtonBasic>{<ShoppingCart/>} {notify > 0 && <span className={styles.notify}>{notify}</span>}</ButtonBasic>
         </div>
-    </div>
+    </div>)
 }
 export default NavBar

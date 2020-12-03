@@ -5,11 +5,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: transparent;
+    background-color: var(--c-primary);
     height: 45px;
-    border-bottom: 1px;
-    border-color: var(--c-navbar-color);
-    border-style: solid;
+    /*border-bottom: 1px;*/
+    /*border-color: var(--c-navbar-color);*/
+    /*border-style: solid;*/
 }
 .pilot{
     display: flex;
@@ -22,8 +22,8 @@
 }
 .notify{
     position: absolute;
-    left: 2px;
-    top: 5px;
+    left: 140px;
+    top:-4px;
     padding-right: 6px;
     padding-left: 6px;
     border-radius: 17px;

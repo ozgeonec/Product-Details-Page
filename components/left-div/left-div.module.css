@@ -9,8 +9,3 @@
     font-size: 30px;
 
 }
-.buttons{
-    display: flex;
-    flex-direction: row;
-    gap: calc(2vmin + 20px);
-}

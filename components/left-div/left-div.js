@@ -1,31 +1,20 @@
 import React, {useEffect, useState} from 'react'
 import styles from './left-div.module.css'
+
+import cn from 'classnames'
+import StoreContext from "../store/store";
+
 import Header from "../header/header";
 import TextPrice from "../text/text-price";
-import Button from "../button/button";
-import cn from 'classnames'
 import Details from "../details/details";
 
-function LeftDiv({className,header="HP Z3700 Kablosuz Mouse Bordo",price="125.90"}){
 
-    const [isClickedKey,setClickedKey]= useState(false)
-
-    useEffect(() => {
-        if (isClickedKey === false) return;
-        const timer = setTimeout(() => setClickedKey(!isClickedKey), 3000);
-        return () => clearTimeout(timer);
-    }, [isClickedKey]);
-
-    return <div className={cn(styles.left && className)}>
+function LeftDiv({className,header="HP Z3700 Kablosuz Mouse Bordo",price="125.90",...props}){
+    return (
+    <div className={cn(styles.left && className)}{...props}>
         <Header children={header}/>
         <TextPrice children={price}/>
-        <div className={styles.buttons}>
-            <Button  onClick={()=>{setClickedKey(!isClickedKey)}}
-                     clicked={isClickedKey}
-                     children={isClickedKey ? "Sepete Eklendi" : "Sepete Ekle"}
-            />
-        </div>
         <Details/>
-    </div>
+    </div>)
 }
 export default LeftDiv
